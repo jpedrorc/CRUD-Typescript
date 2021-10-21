@@ -1,0 +1,32 @@
+{
+  "name": "CRUD-Typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jpedrorc/CRUD-Typescript.git",
+  "author": "Joao Pedro <op.carvalho11@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev -r dotenv/config ./src/index.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "babel-eslint": "^10.1.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "prettier": "^2.4.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
