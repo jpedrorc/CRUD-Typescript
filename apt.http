@@ -1,0 +1,26 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email":"op.carvalho11@gmail.com",
+    "name":"João Pedro da Rocha Carvalho",
+    "age":"24",
+    "telephone":"1199208105"
+}
+
+### FIND ALL
+GET http://localhost:3000/users
+### FIND ONE
+GET http://localhost:3000/users/1
+### UPDATE
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+    "email":"teste.teste1@gmail.com",
+    "name":"Usuário 1",
+    "age":"24",
+    "telephone":"1199955545"
+}
+### DELETE
+DELETE http://localhost:3000/users/1

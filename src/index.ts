@@ -1,13 +1,15 @@
-import express from 'express';
+import express, { json } from 'express';
+import { db } from './database/db';
+import {router} from "./routes"
 
 const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-app.get('/', (req: express.Request, res: express.Response) => {
-  res.json({ msg: 'ok' });
-});
+app.use(express.json());
+app.use(router);
 
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
+  await db.sync();
   console.log(`Servidor iniciado na porta ${PORT}`);
 });
