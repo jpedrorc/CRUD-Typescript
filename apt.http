@@ -1,17 +1,19 @@
-POST http://localhost:3000/users
+POST http://localhost:3000/address
 Content-Type: application/json
 
 {
-    "email":"op.carvalho11@gmail.com",
-    "name":"João Pedro da Rocha Carvalho",
-    "age":"24",
-    "telephone":"1199208105"
+    "address":"Rua Teste Simões",
+    "number":"449",
+    "cep":"02504000",
+    "city":"São Paulo",
+    "state":"SP",
+    "country":"BR"
 }
 
 ### FIND ALL
-GET http://localhost:3000/users
+GET http://localhost:3000/address
 ### FIND ONE
-GET http://localhost:3000/users/1
+GET http://localhost:3000/users/2
 ### UPDATE
 PUT http://localhost:3000/users/1
 Content-Type: application/json

@@ -20,6 +20,10 @@ export const AddressModel = db.define('address',{
         type: DataTypes.STRING,
         allowNull:false
     },
+    city:{
+        type: DataTypes.STRING,
+        allowNull:false
+    },
     state:{
         type: DataTypes.STRING,
         allowNull:false

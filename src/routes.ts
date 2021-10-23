@@ -5,6 +5,10 @@ import AddressController from "./controllers/AddressController";
 const router = express.Router();
 
 router.post("/address", AddressController.create);
+router.get("/address", AddressController.findAll);
+router.get("/address/:addressId", AddressController.findOne);
+router.put("/address/:addressId", AddressController.update);
+router.delete("/address/:addressId", AddressController.destroy);
 
 router.post("/users", UserController.create);
 router.get("/users", UserController.findAll);
